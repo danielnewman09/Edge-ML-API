@@ -6,3 +6,4 @@ Create a service file
 sudo nano /etc/systemd/system/edge_ml_api.service
 ```
 
+paste the contents from the file in this directory
