@@ -1,0 +1,1545 @@
+[
+    {
+        "id": "a4e08acd.ed74a8",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "cb2b83e3.7d52f",
+        "type": "tab",
+        "label": "Flow 2",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "9bdfb12f.9265f",
+        "type": "tab",
+        "label": "Train Models",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "6830e1a3.ae2a9",
+        "type": "mqtt-broker",
+        "z": "",
+        "name": "DNewman Research",
+        "broker": "69.222.133.95",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": true,
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": ""
+    },
+    {
+        "id": "4a04c925.07b248",
+        "type": "mqtt-broker",
+        "z": "",
+        "name": "DNewman Research",
+        "broker": "69.222.133.95",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": true,
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": ""
+    },
+    {
+        "id": "4b064407.63759c",
+        "type": "ui_group",
+        "z": "",
+        "name": "Train Model",
+        "tab": "",
+        "order": 2,
+        "disp": true,
+        "width": "15",
+        "collapse": false
+    },
+    {
+        "id": "9c9fb9ab.fbfc18",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-dark",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "reset": false
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#097479",
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#000000",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#0eb8c0",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "bb6500da.3dc83",
+        "type": "ui_group",
+        "z": "",
+        "name": "Current",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": true
+    },
+    {
+        "id": "fd6bb9b5.24ba68",
+        "type": "serial-port",
+        "z": "",
+        "serialport": "/dev/rfcomm0",
+        "serialbaud": "9600",
+        "databits": "8",
+        "parity": "none",
+        "stopbits": "1",
+        "waitfor": "",
+        "dtr": "none",
+        "rts": "none",
+        "cts": "none",
+        "dsr": "none",
+        "newline": "\\n",
+        "bin": "false",
+        "out": "char",
+        "addchar": "",
+        "responsetimeout": "10000"
+    },
+    {
+        "id": "ab557ddb.0c799",
+        "type": "ui_group",
+        "z": "",
+        "name": "Historical",
+        "tab": "",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": true
+    },
+    {
+        "id": "6fadd7d4.2fe9a8",
+        "type": "mqtt-broker",
+        "z": "",
+        "name": "DNewman Research",
+        "broker": "128.61.38.132",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": true,
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": ""
+    },
+    {
+        "id": "5323f424.1f1cac",
+        "type": "ui_group",
+        "z": "",
+        "name": "Vibration Label",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "15",
+        "collapse": true
+    },
+    {
+        "id": "2d8007d.a9a3af8",
+        "type": "ui_group",
+        "z": "",
+        "name": "Vibration History",
+        "tab": "",
+        "order": 2,
+        "disp": true,
+        "width": "15",
+        "collapse": true
+    },
+    {
+        "id": "904b2983.d19f18",
+        "type": "ui_group",
+        "z": "",
+        "name": "Charts",
+        "tab": "",
+        "order": 2,
+        "disp": false,
+        "width": "6"
+    },
+    {
+        "id": "7148a9c8.4649f8",
+        "type": "ui_group",
+        "z": "",
+        "name": "Inputs",
+        "tab": "",
+        "order": 1,
+        "disp": false,
+        "width": "6"
+    },
+    {
+        "id": "45eefcb.b5df304",
+        "type": "ui_group",
+        "z": "",
+        "name": "Group 3",
+        "tab": "",
+        "order": 3,
+        "disp": false,
+        "width": "6"
+    },
+    {
+        "id": "daa16f2.6b2ac9",
+        "type": "ui_group",
+        "z": "",
+        "name": "Default",
+        "tab": "",
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "1dcfae73.7c3e22",
+        "type": "ui_group",
+        "z": "",
+        "name": "Vibration State",
+        "tab": "",
+        "order": 3,
+        "disp": true,
+        "width": "15",
+        "collapse": true
+    },
+    {
+        "id": "57915840.b2dc08",
+        "type": "mqtt-broker",
+        "z": "",
+        "name": "GeorgiaTech mb12mahmoud",
+        "broker": "mb12.iotfm.org",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": true,
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": ""
+    },
+    {
+        "id": "65b1ca60.7880d4",
+        "type": "ui_group",
+        "z": "",
+        "name": "Choose Data",
+        "tab": "",
+        "disp": true,
+        "width": "15",
+        "collapse": true
+    },
+    {
+        "id": "3391d804.2f1448",
+        "type": "ui_group",
+        "z": "",
+        "name": "Show Features",
+        "tab": "",
+        "disp": true,
+        "width": "15",
+        "collapse": true
+    },
+    {
+        "id": "86128784.e8f158",
+        "type": "ui_group",
+        "z": "",
+        "name": "Train Model",
+        "tab": "232c5dda.9f2da2",
+        "order": 2,
+        "disp": true,
+        "width": "15",
+        "collapse": false
+    },
+    {
+        "id": "49df90a8.db71f",
+        "type": "mqtt-broker",
+        "z": "",
+        "name": "DNewman Research",
+        "broker": "69.222.133.95",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": true,
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": ""
+    },
+    {
+        "id": "232c5dda.9f2da2",
+        "type": "ui_tab",
+        "z": "",
+        "name": "Train Model",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "1db4cfba.ba9fd",
+        "type": "ui_tab",
+        "z": "",
+        "name": "Model Fit",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "194aa6.ee59e55a",
+        "type": "ui_group",
+        "z": "",
+        "name": "Model Fit",
+        "tab": "1db4cfba.ba9fd",
+        "order": 1,
+        "disp": true,
+        "width": "15",
+        "collapse": false
+    },
+    {
+        "id": "8f4e5d7b.5eba8",
+        "type": "MySQLdatabase",
+        "z": "",
+        "host": "69.222.133.95",
+        "port": "3306",
+        "db": "db18",
+        "tz": ""
+    },
+    {
+        "id": "ad09ee9.f307f1",
+        "type": "inject",
+        "z": "a4e08acd.ed74a8",
+        "name": "Interval for Heartbeat",
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "repeat": "3600",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "",
+        "x": 320,
+        "y": 200,
+        "wires": [
+            [
+                "46655249.c3d38c"
+            ]
+        ]
+    },
+    {
+        "id": "46655249.c3d38c",
+        "type": "function",
+        "z": "a4e08acd.ed74a8",
+        "name": "Heartbeat Message",
+        "func": "var message = {};\nvar dataItemId = \"Heartbeat\"\nvar topic = 'Asset/'+ global.get(\"assetId\") + '/' + dataItemId;\nos = context.global.os;\nvar now = new Date();\n\nmessage[\"assetId\"] = global.get(\"assetId\");\nmessage[\"dateTime\"] = now.toISOString();\nmessage[\"dataItemId\"] = dataItemId;\nmessage[\"IPAddress\"] = os.networkInterfaces().wlan0[0].address;\nmessage[\"MACAddress\"] = os.networkInterfaces().wlan0[0].mac;\n\nstatusText = message[\"dateTime\"]\nnode.status({fill:\"green\", shape:\"dot\", text: statusText});\n\nreturn [{\"topic\": topic, \"payload\": JSON.stringify(message)}]",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 530,
+        "y": 200,
+        "wires": [
+            [
+                "52478a3e.927a14",
+                "f9b1db4.0925428"
+            ]
+        ]
+    },
+    {
+        "id": "52478a3e.927a14",
+        "type": "mqtt out",
+        "z": "a4e08acd.ed74a8",
+        "name": "DNewman Research",
+        "topic": "",
+        "qos": "0",
+        "retain": "",
+        "broker": "6830e1a3.ae2a9",
+        "x": 740,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "f9b1db4.0925428",
+        "type": "debug",
+        "z": "a4e08acd.ed74a8",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 720,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "606485c8.92869c",
+        "type": "inject",
+        "z": "cb2b83e3.7d52f",
+        "name": "Trigger on Startup",
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "",
+        "x": 210,
+        "y": 180,
+        "wires": [
+            [
+                "e78254b9.31b6a8"
+            ]
+        ]
+    },
+    {
+        "id": "e78254b9.31b6a8",
+        "type": "function",
+        "z": "cb2b83e3.7d52f",
+        "name": "Set global variables",
+        "func": "// Asset configuration variables\nglobal.set(\"assetId\", \"Fog ML\");\n\n\n// Last heartbeat seed\nvar now = new Date();\nglobal.set(\"lastHearbeat\", now.valueOf());\n\nstatusText = \"Variables Set\"\nnode.status({fill:\"green\", shape:\"dot\", text: statusText});\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 450,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "95bf9c25.1c5d8",
+        "type": "comment",
+        "z": "cb2b83e3.7d52f",
+        "name": "Modify global variables to change configuration.",
+        "info": "",
+        "x": 540,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "4f99f64b.848298",
+        "type": "ui_form",
+        "z": "9bdfb12f.9265f",
+        "name": "",
+        "label": "",
+        "group": "86128784.e8f158",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "Start Date",
+                "value": "startDate",
+                "type": "date",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "End Date",
+                "value": "endDate",
+                "type": "date",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Model Id",
+                "value": "modelId",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Asset Id",
+                "value": "assetId",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Warm Up Program?",
+                "value": "isWarmUp",
+                "type": "switch",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Spindle Speed (RPM)",
+                "value": "spindleSpeed",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Data Item Id",
+                "value": "dataItemId",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Feature",
+                "value": "feature",
+                "type": "text",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "startDate": "",
+            "endDate": "",
+            "modelId": "",
+            "assetId": "",
+            "isWarmUp": false,
+            "spindleSpeed": "",
+            "dataItemId": "",
+            "feature": ""
+        },
+        "payload": "",
+        "submit": "submit",
+        "cancel": "cancel",
+        "topic": "",
+        "x": 130,
+        "y": 780,
+        "wires": [
+            [
+                "343facfa.815074"
+            ]
+        ]
+    },
+    {
+        "id": "77cb6d8.8ad9594",
+        "type": "debug",
+        "z": "9bdfb12f.9265f",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 420,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "343facfa.815074",
+        "type": "function",
+        "z": "9bdfb12f.9265f",
+        "name": "Set Topic",
+        "func": "msg.payload['startDate'] = msg.payload['startDate'].split(\"T\")[0];\nmsg.payload['endDate'] = msg.payload['endDate'].split(\"T\")[0];\n\nmsg.topic = 'Asset/' + msg.payload['assetId'] + '/ModelTrain'\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 270,
+        "y": 780,
+        "wires": [
+            [
+                "77cb6d8.8ad9594",
+                "e5a835ad.f0c418"
+            ]
+        ]
+    },
+    {
+        "id": "e5a835ad.f0c418",
+        "type": "mqtt out",
+        "z": "9bdfb12f.9265f",
+        "name": "",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "broker": "49df90a8.db71f",
+        "x": 600,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "9a66e098.47bb8",
+        "type": "mqtt in",
+        "z": "9bdfb12f.9265f",
+        "name": "",
+        "topic": "Asset/+/LiteModels",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "49df90a8.db71f",
+        "x": 310,
+        "y": 1120,
+        "wires": [
+            [
+                "9e3515f6.b29c88"
+            ]
+        ]
+    },
+    {
+        "id": "ff7baf01.6b104",
+        "type": "debug",
+        "z": "9bdfb12f.9265f",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 610,
+        "y": 1160,
+        "wires": []
+    },
+    {
+        "id": "9e3515f6.b29c88",
+        "type": "json",
+        "z": "9bdfb12f.9265f",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 470,
+        "y": 1120,
+        "wires": [
+            [
+                "6e13181f.4d11b8",
+                "ff7baf01.6b104"
+            ]
+        ]
+    },
+    {
+        "id": "6e13181f.4d11b8",
+        "type": "change",
+        "z": "9bdfb12f.9265f",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "avgMean",
+                "pt": "msg",
+                "to": "payload.avgMean",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "avgStd",
+                "pt": "msg",
+                "to": "payload.avgStd",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "varMean",
+                "pt": "msg",
+                "to": "payload.varMean",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "varStd",
+                "pt": "msg",
+                "to": "payload.varStd",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "assetId",
+                "pt": "msg",
+                "to": "payload.assetId",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "isWarmUp",
+                "pt": "msg",
+                "to": "payload.isWarmUp",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "spindleSpeed",
+                "pt": "msg",
+                "to": "payload.spindleSpeed",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "modelId",
+                "pt": "msg",
+                "to": "payload.modelId",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "feature",
+                "pt": "msg",
+                "to": "payload.feature",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "dataItemId",
+                "pt": "msg",
+                "to": "payload.dataItemId",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "values",
+                "pt": "msg",
+                "to": "payload.values",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 620,
+        "y": 1120,
+        "wires": [
+            [
+                "86fa2680.1672d8"
+            ]
+        ]
+    },
+    {
+        "id": "86fa2680.1672d8",
+        "type": "function",
+        "z": "9bdfb12f.9265f",
+        "name": "Set File Name",
+        "func": "msg.path = '/home/pi/TF_Fit/Models/' + msg.assetId + '/' + msg.dataItemId + '/' + msg.isWarmUp.toString() + '/' + msg.spindleSpeed.toString() + '/'\nmsg.filename = 'model_' + msg.modelId + '_' + msg.feature +  '_lite.tflite'\n\nmsg.payload = {};\n\n// msg.payload = msg.values;\n\nmsg.payload.values = msg.values;\nmsg.payload.path = msg.path;\nmsg.payload.filename = msg.filename;\n\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 800,
+        "y": 1120,
+        "wires": [
+            [
+                "9c3bc549.e2dd48"
+            ]
+        ]
+    },
+    {
+        "id": "780f6ad.b2d7a94",
+        "type": "function",
+        "z": "9bdfb12f.9265f",
+        "name": "Set Payload",
+        "func": "msg.path = '/home/pi/TF_Fit/Models/' + msg.assetId + '/' + msg.dataItemId + '/' + msg.isWarmUp.toString() + '/' + msg.spindleSpeed.toString() + '/'\nmsg.filename = msg.path + 'control_params_' + msg.modelId + '_' + msg.feature + '_lite.json'\n\nmsg.payload = {};\nmsg.payload.avgMean = msg.avgMean;\nmsg.payload.avgStd = msg.avgStd;\nmsg.payload.varMean = msg.varMean;\nmsg.payload.varStd = msg.varStd;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1170,
+        "y": 1120,
+        "wires": [
+            [
+                "44f8cf8b.bfc6f"
+            ]
+        ]
+    },
+    {
+        "id": "44f8cf8b.bfc6f",
+        "type": "file",
+        "z": "9bdfb12f.9265f",
+        "name": "Save Model Statistics",
+        "filename": "",
+        "appendNewline": true,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 1380,
+        "y": 1120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7462106e.bfafb",
+        "type": "mqtt in",
+        "z": "9bdfb12f.9265f",
+        "name": "",
+        "topic": "Asset/MMM-EMCO-E350/Vibration",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "49df90a8.db71f",
+        "x": 240,
+        "y": 1200,
+        "wires": [
+            [
+                "c5bbffea.7cb4b"
+            ]
+        ]
+    },
+    {
+        "id": "c5bbffea.7cb4b",
+        "type": "json",
+        "z": "9bdfb12f.9265f",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 470,
+        "y": 1200,
+        "wires": [
+            [
+                "3123d6e6.44a93a",
+                "9785f0e6.dbc96"
+            ]
+        ]
+    },
+    {
+        "id": "8622ee70.708f7",
+        "type": "http request",
+        "z": "9bdfb12f.9265f",
+        "name": "Parse Vibration Features",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": false,
+        "url": "http://localhost:5000/features/parse/vibration",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "x": 770,
+        "y": 1200,
+        "wires": [
+            [
+                "48d82800.69b1c8",
+                "8393a64f.0536b8"
+            ]
+        ]
+    },
+    {
+        "id": "3123d6e6.44a93a",
+        "type": "function",
+        "z": "9bdfb12f.9265f",
+        "name": "",
+        "func": "msg.dataItemId = msg.payload.dataItemId;\nmsg.modelType = msg.payload.modelType;\nmsg.assetId = msg.payload.assetId;\nmsg.isWarmUp = msg.payload.ProgramName.includes('WARMUP');\nmsg.spindleSpeed = msg.payload.SpindleSpeed;\nmsg.payload.fftPoints = 1024;\n\nmsg.values = msg.payload.values;\nmsg.fftPoints = 1024;\nmsg.samplingInterval = msg.payload.samplingInterval;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 590,
+        "y": 1200,
+        "wires": [
+            [
+                "8622ee70.708f7"
+            ]
+        ]
+    },
+    {
+        "id": "48d82800.69b1c8",
+        "type": "function",
+        "z": "9bdfb12f.9265f",
+        "name": "",
+        "func": "var basePath = '/home/pi/TF_Fit/';\nvar fs = context.global.fs;\n\nvar allMessages = [];\n\nmsg.payload.dataItemId = msg.dataItemId;\nmsg.payload.modelType = msg.modelType;\nmsg.payload.assetId = msg.assetId;\nmsg.payload.isWarmUp = msg.isWarmUp;\nmsg.payload.spindleSpeed = msg.spindleSpeed;\n\n// msg.payload.fftPoints = 1024;\n\npath = '/home/pi/TF_Fit/Models/' + msg.assetId + '/' + msg.dataItemId + '/' + msg.isWarmUp.toString() + '/' + msg.spindleSpeed.toString() + '/'\nvar files = fs.readdirSync(path);\n\nvar modelTypes = [];\nvar features = [];\n\nvar arrayLength = files.length;\nfor (var i = 0; i < arrayLength; i++) {\n    let thisArray = files[i].split('_');\n    \n    if (thisArray[0].includes('model') && thisArray[thisArray.length-1].includes('lite')){\n        let modelId = thisArray[1];\n        let feature = thisArray[2].replace('_lite.tflite','');\n        \n        let jsonPayload = {};\n        jsonPayload.dataItemId = msg.dataItemId;\n        jsonPayload.modelId = modelId;\n        jsonPayload.assetId = msg.assetId;\n        jsonPayload.isWarmUp = msg.isWarmUp;\n        jsonPayload.spindleSpeed = msg.spindleSpeed;\n        jsonPayload.feature = thisArray[2];\n        jsonPayload.basePath = basePath;\n    \n        if (feature.includes('FFT')) {\n            jsonPayload.xInference = msg.payload.fftAmps;\n        }\n        else if (feature.indludes('Vibration')) {\n            jsonPayload.xInference = msg.payload.Vibration;\n        }\n        \n        let newMessage = {payload: jsonPayload };\n        allMessages.push(newMessage);  \n    }\n}\n\n\nmsg = [allMessages];\n\n// msg.values = msg.payload.values;\n// msg.fftPoints = 1024;\n// msg.samplingInterval = msg.payload.samplingInterval;\n\n// var fs = context.global.fs;\n// msg.assetId = 'MMM-EMCO-E350';\n// msg.dataItemId = 'Vibration';\n// msg.isWarmUp = true;\n// msg.spindleSpeed = 3000;\n// path = msg.payload.basePath + 'Models/' + msg.assetId + '/' + msg.dataItemId + '/' + msg.isWarmUp.toString() + '/' + msg.spindleSpeed.toString() + '/'\n// var files = fs.readdirSync(path);\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 950,
+        "y": 1200,
+        "wires": [
+            [
+                "6471563b.b0c638"
+            ]
+        ]
+    },
+    {
+        "id": "6471563b.b0c638",
+        "type": "http request",
+        "z": "9bdfb12f.9265f",
+        "name": "Fit Features to Model",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": false,
+        "url": "http://localhost:5000/models/inference/lite",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "x": 1140,
+        "y": 1200,
+        "wires": [
+            [
+                "3723f831.ee7ce8",
+                "549be428.e8331c"
+            ]
+        ]
+    },
+    {
+        "id": "3723f831.ee7ce8",
+        "type": "debug",
+        "z": "9bdfb12f.9265f",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "x": 1350,
+        "y": 1160,
+        "wires": []
+    },
+    {
+        "id": "bf91c1ee.f951b",
+        "type": "http request",
+        "z": "9bdfb12f.9265f",
+        "name": "Simulate Vibration",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": false,
+        "url": "http://localhost:5000/simulate/vibration",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "x": 690,
+        "y": 860,
+        "wires": [
+            [
+                "9e6b48b0.758398"
+            ]
+        ]
+    },
+    {
+        "id": "b66a8503.f5b728",
+        "type": "inject",
+        "z": "9bdfb12f.9265f",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "10",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 170,
+        "y": 860,
+        "wires": [
+            [
+                "1f6ea585.1b19ca"
+            ]
+        ]
+    },
+    {
+        "id": "654aa802.404538",
+        "type": "debug",
+        "z": "9bdfb12f.9265f",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "x": 950,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "6dd62e45.5270f",
+        "type": "function",
+        "z": "9bdfb12f.9265f",
+        "name": "",
+        "func": "\nmsg.payload = {};\n\nmsg.payload.duration = 1;\nmsg.payload.samplingRate = 4200;\nmsg.payload.amplitudes = 1.0;\nmsg.payload.frequencies = 630;\nmsg.payload.noiseStd = 1e-12;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 510,
+        "y": 860,
+        "wires": [
+            [
+                "bf91c1ee.f951b"
+            ]
+        ]
+    },
+    {
+        "id": "9e6b48b0.758398",
+        "type": "function",
+        "z": "9bdfb12f.9265f",
+        "name": "",
+        "func": "msg.payload.assetId = 'Simulated Data (No Noise - Vary Amplitude)';\nmsg.payload.dataItemId = 'Vibration'\nmsg.payload.samplingInterval = 1/4200;\nmsg.payload.ProgramName = 'Simulation';\nmsg.payload.SpindleSpeed = 630;\nvar dateTime = new Date(msg.dateTime).toISOString();\nmsg.payload.dateTime = dateTime;\n\nmsg.topic = 'Asset/' + msg.payload.assetId + '/' + msg.payload.dataItemId;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 890,
+        "y": 860,
+        "wires": [
+            [
+                "654aa802.404538",
+                "6b615994.57af08"
+            ]
+        ]
+    },
+    {
+        "id": "1f6ea585.1b19ca",
+        "type": "change",
+        "z": "9bdfb12f.9265f",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "dateTime",
+                "pt": "msg",
+                "to": "",
+                "tot": "date"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 350,
+        "y": 860,
+        "wires": [
+            [
+                "6dd62e45.5270f"
+            ]
+        ]
+    },
+    {
+        "id": "6b615994.57af08",
+        "type": "mqtt out",
+        "z": "9bdfb12f.9265f",
+        "name": "",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "broker": "49df90a8.db71f",
+        "x": 1070,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "9785f0e6.dbc96",
+        "type": "debug",
+        "z": "9bdfb12f.9265f",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 610,
+        "y": 1240,
+        "wires": []
+    },
+    {
+        "id": "9c3bc549.e2dd48",
+        "type": "http request",
+        "z": "9bdfb12f.9265f",
+        "name": "Save Model",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": false,
+        "url": "http://localhost:5000/models/save",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "x": 990,
+        "y": 1120,
+        "wires": [
+            [
+                "780f6ad.b2d7a94"
+            ]
+        ]
+    },
+    {
+        "id": "549be428.e8331c",
+        "type": "function",
+        "z": "9bdfb12f.9265f",
+        "name": "",
+        "func": "var thisPayload = msg.payload;\n\ndata = [\n    {label:\"Mean\",payload:thisPayload.valueMean,series:msg.payload.state.toString()}\n    ];\n\nreturn [data];",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1350,
+        "y": 1200,
+        "wires": [
+            [
+                "696acfd8.f5c0c"
+            ]
+        ]
+    },
+    {
+        "id": "696acfd8.f5c0c",
+        "type": "ui_chart",
+        "z": "9bdfb12f.9265f",
+        "name": "",
+        "group": "194aa6.ee59e55a",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "label": "Control Chart - Simulated Data",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "-3",
+        "ymax": "3",
+        "removeOlder": 1,
+        "removeOlderPoints": "100",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "useOldStyle": false,
+        "outputs": 1,
+        "x": 1590,
+        "y": 1200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4234a1dd.539ef",
+        "type": "inject",
+        "z": "9bdfb12f.9265f",
+        "name": "",
+        "topic": "",
+        "payload": "[]",
+        "payloadType": "json",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 1350,
+        "y": 1320,
+        "wires": [
+            [
+                "696acfd8.f5c0c"
+            ]
+        ]
+    },
+    {
+        "id": "5067248f.cadcdc",
+        "type": "mqtt in",
+        "z": "9bdfb12f.9265f",
+        "name": "",
+        "topic": "Asset/+/FullModels",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "49df90a8.db71f",
+        "x": 310,
+        "y": 1080,
+        "wires": [
+            [
+                "ee0292f6.5960d"
+            ]
+        ]
+    },
+    {
+        "id": "3795dbae.df5714",
+        "type": "file",
+        "z": "9bdfb12f.9265f",
+        "name": "Save Model Statistics",
+        "filename": "",
+        "appendNewline": true,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 1380,
+        "y": 1080,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c5d3917.565337",
+        "type": "function",
+        "z": "9bdfb12f.9265f",
+        "name": "Set Payload",
+        "func": "msg.path = '/home/pi/TF_Fit/Models/' + msg.assetId + '/' + msg.dataItemId + '/' + msg.isWarmUp.toString() + '/' + msg.spindleSpeed.toString() + '/'\nmsg.filename = msg.path + 'control_params_' + msg.modelId + '_' + msg.feature + '_full.json'\n\nmsg.payload = {};\nmsg.payload.avgMean = msg.avgMean;\nmsg.payload.avgStd = msg.avgStd;\nmsg.payload.varMean = msg.varMean;\nmsg.payload.varStd = msg.varStd;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1170,
+        "y": 1080,
+        "wires": [
+            [
+                "3795dbae.df5714"
+            ]
+        ]
+    },
+    {
+        "id": "c65561fb.74e7e",
+        "type": "http request",
+        "z": "9bdfb12f.9265f",
+        "name": "Save Model",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": false,
+        "url": "http://localhost:5000/models/save",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "x": 990,
+        "y": 1080,
+        "wires": [
+            [
+                "c5d3917.565337"
+            ]
+        ]
+    },
+    {
+        "id": "6d94614f.cb24c",
+        "type": "function",
+        "z": "9bdfb12f.9265f",
+        "name": "Set File Name",
+        "func": "msg.path = '/home/pi/TF_Fit/Models/' + msg.assetId + '/' + msg.dataItemId + '/' + msg.isWarmUp.toString() + '/' + msg.spindleSpeed.toString() + '/'\nmsg.filename = 'model_' + msg.modelId + '_' + msg.feature +  '_full.h5'\n\nmsg.payload = {};\n\n\nmsg.payload.values = msg.values;\nmsg.payload.path = msg.path;\nmsg.payload.filename = msg.filename;\n\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 800,
+        "y": 1080,
+        "wires": [
+            [
+                "c65561fb.74e7e"
+            ]
+        ]
+    },
+    {
+        "id": "f8b508a6.f006c8",
+        "type": "change",
+        "z": "9bdfb12f.9265f",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "avgMean",
+                "pt": "msg",
+                "to": "payload.avgMean",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "avgStd",
+                "pt": "msg",
+                "to": "payload.avgStd",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "varMean",
+                "pt": "msg",
+                "to": "payload.varMean",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "varStd",
+                "pt": "msg",
+                "to": "payload.varStd",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "assetId",
+                "pt": "msg",
+                "to": "payload.assetId",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "isWarmUp",
+                "pt": "msg",
+                "to": "payload.isWarmUp",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "spindleSpeed",
+                "pt": "msg",
+                "to": "payload.spindleSpeed",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "modelId",
+                "pt": "msg",
+                "to": "payload.modelId",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "feature",
+                "pt": "msg",
+                "to": "payload.feature",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "dataItemId",
+                "pt": "msg",
+                "to": "payload.dataItemId",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "values",
+                "pt": "msg",
+                "to": "payload.values",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 620,
+        "y": 1080,
+        "wires": [
+            [
+                "6d94614f.cb24c"
+            ]
+        ]
+    },
+    {
+        "id": "ee0292f6.5960d",
+        "type": "json",
+        "z": "9bdfb12f.9265f",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 470,
+        "y": 1080,
+        "wires": [
+            [
+                "f8b508a6.f006c8"
+            ]
+        ]
+    },
+    {
+        "id": "da881aae.d0b4b8",
+        "type": "function",
+        "z": "9bdfb12f.9265f",
+        "name": "",
+        "func": "var basePath = '/home/pi/TF_Fit/';\nvar fs = context.global.fs;\n\nvar allMessages = [];\n\nmsg.payload.dataItemId = msg.dataItemId;\nmsg.payload.modelType = msg.modelType;\nmsg.payload.assetId = msg.assetId;\nmsg.payload.isWarmUp = msg.isWarmUp;\nmsg.payload.spindleSpeed = msg.spindleSpeed;\n\n// msg.payload.fftPoints = 1024;\n\npath = '/home/pi/TF_Fit/Models/' + msg.assetId + '/' + msg.dataItemId + '/' + msg.isWarmUp.toString() + '/' + msg.spindleSpeed.toString() + '/'\nvar files = fs.readdirSync(path);\n\nvar modelTypes = [];\nvar features = [];\n\nvar arrayLength = files.length;\nfor (var i = 0; i < arrayLength; i++) {\n    let thisArray = files[i].split('_');\n    \n    if (thisArray[0].includes('model') && thisArray[thisArray.length-1].includes('full')){\n        let modelId = thisArray[1];\n        let feature = thisArray[2].replace('_full.h5','');\n        \n        let jsonPayload = {};\n        jsonPayload.dataItemId = msg.dataItemId;\n        jsonPayload.modelId = modelId;\n        jsonPayload.assetId = msg.assetId;\n        jsonPayload.isWarmUp = msg.isWarmUp;\n        jsonPayload.spindleSpeed = msg.spindleSpeed;\n        jsonPayload.feature = thisArray[2].replace('_full.h5','');\n        jsonPayload.basePath = basePath;\n    \n        if (feature.includes('FFT')) {\n            jsonPayload.xInference = msg.payload.fftAmps;\n        }\n        else if (feature.indludes('Vibration')) {\n            jsonPayload.xInference = msg.payload.Vibration;\n        }\n        \n        let newMessage = {payload: jsonPayload };\n        allMessages.push(newMessage);  \n    }\n}\n\n\nmsg = [allMessages];\n\n// msg.values = msg.payload.values;\n// msg.fftPoints = 1024;\n// msg.samplingInterval = msg.payload.samplingInterval;\n\n// var fs = context.global.fs;\n// msg.assetId = 'MMM-EMCO-E350';\n// msg.dataItemId = 'Vibration';\n// msg.isWarmUp = true;\n// msg.spindleSpeed = 3000;\n// path = msg.payload.basePath + 'Models/' + msg.assetId + '/' + msg.dataItemId + '/' + msg.isWarmUp.toString() + '/' + msg.spindleSpeed.toString() + '/'\n// var files = fs.readdirSync(path);\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1010,
+        "y": 1260,
+        "wires": [
+            [
+                "55319203.5cc38c"
+            ]
+        ]
+    },
+    {
+        "id": "55319203.5cc38c",
+        "type": "http request",
+        "z": "9bdfb12f.9265f",
+        "name": "Fit Features to Model",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": false,
+        "url": "http://localhost:5000/models/inference/full",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "x": 1180,
+        "y": 1260,
+        "wires": [
+            [
+                "d4ff00b6.b8a0a"
+            ]
+        ]
+    },
+    {
+        "id": "d4ff00b6.b8a0a",
+        "type": "function",
+        "z": "9bdfb12f.9265f",
+        "name": "",
+        "func": "var thisPayload = msg.payload;\n\ndata = [\n    {label:\"Mean\",payload:thisPayload.valueMean,series:msg.payload.state.toString()}\n    ];\n\nreturn [data];",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1350,
+        "y": 1260,
+        "wires": [
+            [
+                "d4f29eaa.a3a6f"
+            ]
+        ]
+    },
+    {
+        "id": "d4f29eaa.a3a6f",
+        "type": "ui_chart",
+        "z": "9bdfb12f.9265f",
+        "name": "",
+        "group": "194aa6.ee59e55a",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "label": "Control Chart - Simulated Data",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "-3",
+        "ymax": "3",
+        "removeOlder": 1,
+        "removeOlderPoints": "100",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "useOldStyle": false,
+        "outputs": 1,
+        "x": 1590,
+        "y": 1260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8393a64f.0536b8",
+        "type": "delay",
+        "z": "9bdfb12f.9265f",
+        "name": "",
+        "pauseType": "rate",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "30",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": true,
+        "x": 900,
+        "y": 1260,
+        "wires": [
+            [
+                "da881aae.d0b4b8"
+            ]
+        ]
+    }
+]
