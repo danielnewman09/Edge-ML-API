@@ -112,7 +112,6 @@ def model_inference_full():
     xInference = xInference.reshape(1,512,1)
     X_predict = np.repeat(xInference,num_samples,axis=0)
 
-<<<<<<< HEAD
     predict = new_model.predict(X_predict)
 
     mse = keras.metrics.mean_squared_error(X_predict,predict)
